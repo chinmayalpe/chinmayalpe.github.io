@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chinmay Alpe — Research Engineer specialising in FPGA design, quantum communication systems, and space technology." />
+  <title>Chinmay Alpe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">CA</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#blog">Updates</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="section-hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-decoration">
+      <div class="deco-ring deco-ring-1"></div>
+      <div class="deco-ring deco-ring-2"></div>
+      <div class="deco-ring deco-ring-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Chinmay<br><span class="hero-name-accent">Alpe</span></h1>
+      <p class="hero-tagline">Electronics Engineer. <span>Technology Enthusiast.</span></p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Say Hello</a>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll down</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a Research Engineer at <strong>Pramatra Space</strong>, working on quantum key distribution (QKD) systems for CubeSat payloads in low Earth orbit. I hold a B.E. in Electronics &amp; Telecommunication Engineering from PICT, Pune with a CGPA of 9.45/10.0.</p>
+          <p>My career spans ISRO's Space Applications Centre, IISc Bangalore's Quantum Technologies Lab, and the space-tech industry — building FPGA-based systems, quantum readout hardware, and space-grade electronic payloads at the intersection of quantum physics and engineering.</p>
+          <p>Outside of engineering, I volunteer as a teaching mentor for underprivileged school children, and I'm an avid bird-watcher, photographer, and sketch artist.</p>
+          <div class="about-skills">
+            <span class="skill-tag">FPGA / SoC</span>
+            <span class="skill-tag">Verilog / VHDL</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C / C++</span>
+            <span class="skill-tag">MATLAB</span>
+            <span class="skill-tag">Simulink</span>
+            <span class="skill-tag">LabVIEW</span>
+            <span class="skill-tag">KiCad</span>
+            <span class="skill-tag">Circuit Design</span>
+            <span class="skill-tag">Embedded Systems</span>
+            <span class="skill-tag">ROS</span>
+            <span class="skill-tag">Quantum Tech</span>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-value"><span class="count" data-target="6">0</span>+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value"><span class="count" data-target="4">0</span>+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value"><span class="count" data-target="1">0</span></div>
+            <div class="stat-label">IEEE Publication</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">∞</div>
+            <div class="stat-label">Curiosity</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-label">Career</div>
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="timeline-dot"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-year">July 2024 – Present</div>
+            <div class="timeline-card">
+              <div class="exp-header">
+                <div>
+                  <h3>Research Engineer</h3>
+                  <span class="exp-org">Pramatra Space &nbsp;·&nbsp; Bengaluru, India</span>
+                </div>
+                <span class="exp-badge">Current</span>
+              </div>
+              <ul class="exp-list">
+                <li><strong>Digital Design:</strong> Leading development of electronic systems for a QKD payload onboard a CubeSat, including simulation and implementation of post-processing algorithms for Key Reconciliation Protocols on Xilinx FPGAs and SoCs.</li>
+                <li><strong>Circuit Design:</strong> Completed end-to-end circuit design for a Xilinx SoC-based space payload carrying out quantum communication experiments in low Earth orbit.</li>
+                <li><strong>System Design:</strong> Designed the mixed-signal electronic control architecture for Photonics components used in entangled photon generation and detection.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="timeline-dot"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-year">Dec 2023 – July 2024</div>
+            <div class="timeline-card">
+              <div class="exp-header">
+                <div>
+                  <h3>Project Associate</h3>
+                  <span class="exp-org">Indian Institute of Science (IISc) &nbsp;·&nbsp; Bengaluru, India</span>
+                </div>
+              </div>
+              <ul class="exp-list">
+                <li>Worked on implementation of Signal Processing schemes on RFSoC-based hardware for quantum circuit applications at the Quantum Technologies Lab under Dr. Baladitya Suri.</li>
+                <li><strong>Readout System Design:</strong> Designed a readout scheme for measuring purity of a microwave single-photon source and characterising a Josephson Parametric Converter (JPC) via g² correlation measurement using hardware acceleration.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="timeline-dot"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-year">2022 – Dec 2023</div>
+            <div class="timeline-card">
+              <div class="exp-header">
+                <div>
+                  <h3>Graduate Apprentice</h3>
+                  <span class="exp-org">Indian Space Research Organisation (SAC, ISRO) &nbsp;·&nbsp; Ahmedabad, India</span>
+                </div>
+              </div>
+              <ul class="exp-list">
+                <li>Worked on research projects in Digital Design and Signal Processing with applications in Aerospace and Applied Physics, collaborating on end-to-end development of Space Radar technologies.</li>
+                <li><strong>FPGA TDC for Quantum Radar:</strong> Developed a dual-channel Time-to-Digital Converter with 20 ps precision — 15× more precise than legacy designs — on a Kintex-7 FPGA (NI PXI card).</li>
+                <li><strong>Stepper Motor Control:</strong> Designed and implemented a novel, high-configurability Stepper Motor control topology with multi-parameter control inside a Virtex-5 FPGA.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="timeline-dot"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-year">2018 – 2022</div>
+            <div class="timeline-card">
+              <div class="exp-header">
+                <div>
+                  <h3>B.E. in Electronics &amp; Telecommunication Engineering</h3>
+                  <span class="exp-org">Pune Institute of Computer Technology (PICT) &nbsp;·&nbsp; Pune, India</span>
+                </div>
+                <span class="exp-badge exp-badge-edu">9.45 / 10</span>
+              </div>
+              <p class="exp-note">Graduated with distinction. Active member of PICT Robotics Club as Sensing Lead and Technical Team Member.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label">My Work</div>
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-badge">Space Tech</span>
+            <span class="project-year">2024 – Present</span>
+          </div>
+          <h3 class="project-title">QKD Payload for CubeSat</h3>
+          <p class="project-desc">Leading the development of electronic systems for a Quantum Key Distribution (QKD) payload onboard a CubeSat. Includes post-processing algorithms for Key Reconciliation Protocols and circuit design for the full Xilinx SoC-based space payload.</p>
+          <div class="project-stack">
+            <span>Xilinx SoC</span><span>VHDL</span><span>Python</span><span>FPGA</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/chinmayalpe" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-badge">FPGA / Quantum</span>
+            <span class="project-year">2022 – 2023</span>
+          </div>
+          <h3 class="project-title">FPGA-Based TDC for Quantum Radar</h3>
+          <p class="project-desc">Developed a dual-channel Time-to-Digital Converter on a Kintex-7 FPGA for time-of-flight measurement of entangled photons with 20 ps precision — 15× more precise than the legacy design — for ISRO's entangled photon quantum radar.</p>
+          <div class="project-stack">
+            <span>Kintex-7 FPGA</span><span>VHDL</span><span>NI PXI</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/chinmayalpe" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-badge">Quantum</span>
+            <span class="project-year">2023 – 2024</span>
+          </div>
+          <h3 class="project-title">RFSoC Quantum Readout System</h3>
+          <p class="project-desc">Designed a hardware-accelerated readout scheme for measuring the purity of a microwave single-photon source and characterising a Josephson Parametric Converter via g² correlation measurement at IISc's Quantum Technologies Lab.</p>
+          <div class="project-stack">
+            <span>RFSoC</span><span>Python</span><span>FPGA</span><span>Signal Processing</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/chinmayalpe" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-badge">FPGA / DSP</span>
+            <span class="project-year">2021 – 2022</span>
+          </div>
+          <h3 class="project-title">High-Speed CORDIC for Quantum Readout</h3>
+          <p class="project-desc">Designed a high-speed, low-resource CORDIC algorithm for use in a quantum computing readout system on RFSoC hardware. The design matched IP-ready solutions while delivering significantly better clock rate and configurability.</p>
+          <div class="project-stack">
+            <span>FPGA</span><span>VHDL</span><span>CORDIC</span><span>RFSoC</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/chinmayalpe" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-badge">Robotics</span>
+            <span class="project-year">2021 – 2022</span>
+          </div>
+          <h3 class="project-title">Autonomous Greenhouse Agri-Robot</h3>
+          <p class="project-desc">Developed autonomous navigation algorithms for an agricultural robot in a greenhouse environment, and a robotic arm for identifying and picking ripe tomatoes using Computer Vision. Simulated end-to-end in ROS and Gazebo.</p>
+          <div class="project-stack">
+            <span>ROS</span><span>Python</span><span>Gazebo</span><span>Computer Vision</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/chinmayalpe" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-badge">Embedded</span>
+            <span class="project-year">2021 – 2022</span>
+          </div>
+          <h3 class="project-title">Solar-Powered Reconnaissance Robot</h3>
+          <p class="project-desc">Built a solar-powered surveillance robot capable of infiltrating and monitoring critical sites for extended periods using Night Vision capabilities, stealthy operation, and a remote controlling station for real-time monitoring.</p>
+          <div class="project-stack">
+            <span>Embedded C</span><span>Microcontroller</span><span>Night Vision</span><span>Solar Power</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/chinmayalpe" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section section-alt">
+    <div class="container">
+      <div class="section-label">Milestones</div>
+      <h2 class="section-title">Achievements</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="timeline-dot"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-card">
+              <h3>IEEE Publication — SPACE 2024</h3>
+              <p>Co-authored <em>"FPGA based Variable Scan Rate Generic Stepper Motor Drive Algorithm for mm-Wave Sounder Payloads"</em>, published at the 2024 IEEE Space, Aerospace and Defence Conference (SPACE), Bangalore. doi: 10.1109/SPACE63117.2024.10668030</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="timeline-dot"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-year">2022</div>
+            <div class="timeline-card">
+              <h3>e-Yantra Robotics Competition — Rank 14 (Top 1%)</h3>
+              <p>Team achieved Rank 14 at the e-Yantra Robotics Competition organised by IIT Bombay — placing in the top 1 percentile. The challenge involved design and simulation of robotics software for an autonomous agriculture robot.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="timeline-dot"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-year">2020</div>
+            <div class="timeline-card">
+              <h3>PICT Cretronix 2020 — 2nd Rank</h3>
+              <p>Achieved 2nd rank at the Cretronix Circuit Design event, organised as part of PICT IEEE's annual technical fest 'Credenz'.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="timeline-dot"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-year">2019</div>
+            <div class="timeline-card">
+              <h3>PICT Cretronix 2019 — 1st Rank</h3>
+              <p>Achieved 1st rank at the Cretronix Circuit Design event, organised as part of PICT IEEE's annual technical fest 'Credenz'.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG / UPDATES -->
+  <section id="blog" class="section">
+    <div class="container">
+      <div class="section-label">My Updates</div>
+      <h2 class="section-title">Latest Posts</h2>
+      <div class="blog-grid">
+
+        <article class="blog-card reveal">
+          <div class="blog-meta">
+            <span class="blog-date">June 2026</span>
+            <span class="blog-tag">Update</span>
+          </div>
+          <h3 class="blog-title">What I've Been Building Lately</h3>
+          <p class="blog-excerpt">A short update on current projects, what I'm learning, and what's coming next on my engineering journey...</p>
+          <a href="#" class="blog-read">Read more →</a>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-meta">
+            <span class="blog-date">April 2026</span>
+            <span class="blog-tag">Tech</span>
+          </div>
+          <h3 class="blog-title">Post Title Goes Here</h3>
+          <p class="blog-excerpt">A short excerpt or introduction to this post — enough to hook the reader and give a taste of what's inside.</p>
+          <a href="#" class="blog-read">Read more →</a>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-meta">
+            <span class="blog-date">February 2026</span>
+            <span class="blog-tag">Reflection</span>
+          </div>
+          <h3 class="blog-title">Lessons from My Latest Project</h3>
+          <p class="blog-excerpt">Key things I learned during my last major project — the failures, the unexpected fixes, and the wins.</p>
+          <a href="#" class="blog-read">Read more →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-contact">
+    <div class="container">
+      <div class="section-label">Let's Talk</div>
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-content">
+        <p class="contact-desc">Have a project in mind, want to collaborate, or just want to say hi? My inbox is always open.</p>
+        <a href="mailto:ccalpe2000@gmail.com" class="btn btn-primary btn-large">ccalpe2000@gmail.com</a>
+        <div class="social-links">
+          <a href="https://github.com/chinmayalpe" target="_blank" rel="noopener noreferrer" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/chinmay-alpe/" target="_blank" rel="noopener noreferrer" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Chinmay Alpe &nbsp;·&nbsp; Built with HTML, CSS &amp; JS &nbsp;·&nbsp; Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
