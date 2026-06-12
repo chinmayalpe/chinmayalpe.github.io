@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gallery — Chinmay Alpe" />
+  <title>Gallery — Chinmay Alpe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Chinmay Alpe</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="https://chinmayantaranga.blogspot.com/" target="_blank" rel="noopener noreferrer">Blog ↗</a></li>
+        <li><a href="https://www.instagram.com/chinmay.frames/" target="_blank" rel="noopener noreferrer">Insta ↗</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <div class="section-label">Photography</div>
+      <h1 class="section-title">A Few Frames</h1>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="gallery-grid">
+
+        <div class="gallery-item reveal" data-src="assets/gallery/leopard.jpg">
+          <img src="assets/gallery/leopard.jpg" alt="Leopard, Tadoba 2024" loading="lazy" />
+          <div class="gallery-caption">Leopard, Tadoba 2024</div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="assets/gallery/bird-canary-flycatcher.jpg">
+          <img src="assets/gallery/bird-canary-flycatcher.jpg" alt="Grey-headed Canary Flycatcher, Ooty" loading="lazy" />
+          <div class="gallery-caption">Grey-headed Canary Flycatcher, Ooty</div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="assets/gallery/bird-parakeet.jpg">
+          <img src="assets/gallery/bird-parakeet.jpg" alt="Rose-ringed Parakeet" loading="lazy" />
+          <div class="gallery-caption">Rose-ringed Parakeet</div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="assets/gallery/nisar-launch.jpg">
+          <img src="assets/gallery/nisar-launch.jpg" alt="NISAR Launch, 2025" loading="lazy" />
+          <div class="gallery-caption">NISAR Launch, 2025</div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="assets/gallery/photo-4.jpg">
+          <img src="assets/gallery/photo-4.jpg" alt="At ISRO Space Applications Centre, Ahmedabad" loading="lazy" />
+          <div class="gallery-caption">At ISRO's Space Applications Centre, Ahmedabad</div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="assets/gallery/photo-2.jpg">
+          <img src="assets/gallery/photo-2.jpg" alt="At IISc Quantum Technologies Lab with dilution refrigerator" loading="lazy" />
+          <div class="gallery-caption">Quantum Technologies Lab, IISc Bangalore</div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="assets/gallery/photo-3.jpg">
+          <img src="assets/gallery/photo-3.jpg" alt="Bird-watching with binoculars" loading="lazy" />
+          <div class="gallery-caption">Bird-watching — a favourite pastime</div>
+        </div>
+
+      </div>
+
+      <!-- Lightbox overlay -->
+      <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <img class="lightbox-img" src="" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Chinmay Alpe &nbsp;·&nbsp; Made with HTML, CSS &amp; JS &nbsp;·&nbsp; <a href="https://github.com/chinmayalpe/chinmayalpe.github.io" target="_blank" rel="noopener noreferrer">Source</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

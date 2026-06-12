@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects — Chinmay Alpe" />
+  <title>Projects — Chinmay Alpe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Chinmay Alpe</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="https://chinmayantaranga.blogspot.com/" target="_blank" rel="noopener noreferrer">Blog ↗</a></li>
+        <li><a href="https://www.instagram.com/chinmay.frames/" target="_blank" rel="noopener noreferrer">Insta ↗</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <div class="section-label">My Work</div>
+      <h1 class="section-title">Projects</h1>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-badge">Space Tech</span>
+            <span class="project-year">2024 – Present</span>
+          </div>
+          <h3 class="project-title">QKD Payload for CubeSat</h3>
+          <p class="project-desc">Leading development of electronic systems for a Quantum Key Distribution payload onboard a CubeSat. Includes post-processing algorithms for Key Reconciliation Protocols and circuit design for the full Xilinx SoC-based space payload.</p>
+          <div class="project-stack">
+            <span>Xilinx SoC</span><span>VHDL</span><span>Python</span><span>FPGA</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-badge">FPGA / Quantum</span>
+            <span class="project-year">2022 – 2023</span>
+          </div>
+          <h3 class="project-title">FPGA-Based TDC for Quantum Radar</h3>
+          <p class="project-desc">Dual-channel Time-to-Digital Converter on a Kintex-7 FPGA for time-of-flight measurement of entangled photons with 20 ps precision — 15× more precise than the legacy design — for ISRO's entangled photon quantum radar.</p>
+          <div class="project-stack">
+            <span>Kintex-7 FPGA</span><span>VHDL</span><span>NI PXI</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-badge">Quantum</span>
+            <span class="project-year">2023 – 2024</span>
+          </div>
+          <h3 class="project-title">RFSoC Quantum Readout System</h3>
+          <p class="project-desc">Hardware-accelerated readout scheme for measuring the purity of a microwave single-photon source and characterising a Josephson Parametric Converter via g² correlation measurement at IISc's Quantum Technologies Lab.</p>
+          <div class="project-stack">
+            <span>RFSoC</span><span>Python</span><span>FPGA</span><span>Signal Processing</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-badge">FPGA / DSP</span>
+            <span class="project-year">2021 – 2022</span>
+          </div>
+          <h3 class="project-title">High-Speed CORDIC for Quantum Readout</h3>
+          <p class="project-desc">High-speed, low-resource CORDIC algorithm for a quantum computing readout system on RFSoC hardware. Matched IP-ready solutions while delivering significantly better clock rate and configurability.</p>
+          <div class="project-stack">
+            <span>FPGA</span><span>VHDL</span><span>CORDIC</span><span>RFSoC</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-badge">Robotics</span>
+            <span class="project-year">2021 – 2022</span>
+          </div>
+          <h3 class="project-title">Autonomous Greenhouse Agri-Robot</h3>
+          <p class="project-desc">Autonomous navigation algorithms for an agricultural robot in a greenhouse, with a robotic arm for identifying and picking ripe tomatoes using Computer Vision. Simulated end-to-end in ROS and Gazebo.</p>
+          <div class="project-stack">
+            <span>ROS</span><span>Python</span><span>Gazebo</span><span>Computer Vision</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-badge">Embedded</span>
+            <span class="project-year">2021 – 2022</span>
+          </div>
+          <h3 class="project-title">Solar-Powered Reconnaissance Robot</h3>
+          <p class="project-desc">Solar-powered surveillance robot for extended monitoring of critical sites using Night Vision, stealthy operation, and a remote control station for real-time surveillance.</p>
+          <div class="project-stack">
+            <span>Embedded C</span><span>Microcontroller</span><span>Night Vision</span><span>Solar Power</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Chinmay Alpe &nbsp;·&nbsp; Made with HTML, CSS &amp; JS &nbsp;·&nbsp; <a href="https://github.com/chinmayalpe/chinmayalpe.github.io" target="_blank" rel="noopener noreferrer">Source</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

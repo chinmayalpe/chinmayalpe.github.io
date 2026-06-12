@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Experience — Chinmay Alpe" />
+  <title>Experience — Chinmay Alpe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Chinmay Alpe</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="https://chinmayantaranga.blogspot.com/" target="_blank" rel="noopener noreferrer">Blog ↗</a></li>
+        <li><a href="https://www.instagram.com/chinmay.frames/" target="_blank" rel="noopener noreferrer">Insta ↗</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <div class="section-label">Career</div>
+      <h1 class="section-title">Experience</h1>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="timeline-dot"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-year">July 2024 – Present</div>
+            <div class="timeline-card">
+              <div class="exp-header">
+                <img src="assets/logos/pramatra.jpg" alt="Pramatra Space" class="exp-logo" />
+                <div>
+                  <h3>Research Engineer</h3>
+                  <span class="exp-org">Pramatra Space &nbsp;·&nbsp; Bengaluru, India</span>
+                </div>
+                <span class="exp-badge">Current</span>
+              </div>
+              <ul class="exp-list">
+                <li><strong>Digital Design:</strong> Leading development of electronic systems for a QKD payload onboard a CubeSat, including simulation and implementation of post-processing algorithms for Key Reconciliation Protocols on Xilinx FPGAs and SoCs.</li>
+                <li><strong>Circuit Design:</strong> Completed end-to-end circuit design for a Xilinx SoC-based space payload carrying out quantum communication experiments in low Earth orbit.</li>
+                <li><strong>System Design:</strong> Designed the mixed-signal electronic control architecture for Photonics components used in entangled photon generation and detection.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="timeline-dot"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-year">Dec 2023 – July 2024</div>
+            <div class="timeline-card">
+              <div class="exp-header">
+                <img src="assets/logos/iisc.png" alt="IISc Bangalore" class="exp-logo" />
+                <div>
+                  <h3>Project Associate</h3>
+                  <span class="exp-org">Indian Institute of Science (IISc) &nbsp;·&nbsp; Bengaluru, India</span>
+                </div>
+              </div>
+              <ul class="exp-list">
+                <li>Worked on Signal Processing schemes on RFSoC-based hardware for quantum circuit applications at the Quantum Technologies Lab under Dr. Baladitya Suri.</li>
+                <li><strong>Readout System Design:</strong> Designed a hardware-accelerated readout scheme for measuring purity of a microwave single-photon source and characterising a Josephson Parametric Converter via g² correlation measurement.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="timeline-dot"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-year">2022 – Dec 2023</div>
+            <div class="timeline-card">
+              <div class="exp-header">
+                <img src="assets/logos/isro.png" alt="ISRO" class="exp-logo" />
+                <div>
+                  <h3>Graduate Apprentice</h3>
+                  <span class="exp-org">Indian Space Research Organisation (SAC, ISRO) &nbsp;·&nbsp; Ahmedabad, India</span>
+                </div>
+              </div>
+              <ul class="exp-list">
+                <li>Research in Digital Design and Signal Processing for Aerospace and Applied Physics, contributing to end-to-end development of Space Radar technologies.</li>
+                <li><strong>FPGA TDC for Quantum Radar:</strong> Dual-channel Time-to-Digital Converter with 20 ps precision — 15× better than legacy — on a Kintex-7 FPGA (NI PXI card).</li>
+                <li><strong>Stepper Motor Control:</strong> Novel high-configurability control topology with multi-parameter control inside a Virtex-5 FPGA.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Chinmay Alpe &nbsp;·&nbsp; Made with HTML, CSS &amp; JS &nbsp;·&nbsp; <a href="https://github.com/chinmayalpe/chinmayalpe.github.io" target="_blank" rel="noopener noreferrer">Source</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
