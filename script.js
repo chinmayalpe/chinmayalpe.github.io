@@ -81,3 +81,29 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: '-48% 0px -48% 0px' });
 
 sections.forEach(s => sectionObserver.observe(s));
+
+/* ============================================================
+   LIGHTBOX
+   ============================================================ */
+const lightbox     = document.getElementById('lightbox');
+const lightboxImg  = lightbox.querySelector('.lightbox-img');
+const lightboxClose = lightbox.querySelector('.lightbox-close');
+
+document.querySelectorAll('.gallery-item[data-src]').forEach(item => {
+  item.addEventListener('click', () => {
+    lightboxImg.src = item.dataset.src;
+    lightboxImg.alt = item.querySelector('img').alt;
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+  lightboxImg.src = '';
+}
+
+lightboxClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
