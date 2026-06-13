@@ -214,14 +214,14 @@ img { max-width: 100%; display: block; }
 .section-hero {
   display: flex;
   align-items: center;
-  padding: 5.5rem 0 1.5rem;
+  padding: 6.5rem 0 4rem;
   background: var(--bg);
 }
 
-.section-slim { padding: 1.75rem 0 2rem; }
+.section-slim { padding: 3.5rem 0 2rem; }
 
 .page-header {
-  padding: 7rem 0 2.5rem;
+  padding: 7rem 0 1.25rem;
   background: var(--bg);
 }
 
