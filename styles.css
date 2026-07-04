@@ -78,6 +78,15 @@ img { max-width: 100%; display: block; }
   margin-bottom: 1.5rem;
 }
 
+.subsection-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
 /* ============================================================
    BUTTONS
    ============================================================ */
@@ -219,6 +228,7 @@ img { max-width: 100%; display: block; }
 }
 
 .section-slim { padding: 3.5rem 0 2rem; }
+.section-first { padding-top: 1.5rem; }
 
 .page-header {
   padding: 7rem 0 1.25rem;
@@ -507,6 +517,35 @@ img { max-width: 100%; display: block; }
   line-height: 1.7;
   padding-left: 1rem;
   position: relative;
+}
+.exp-photo-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+.exp-photo-group .exp-photo {
+  margin-top: 0;
+  max-width: none;
+  height: 200px;
+}
+.exp-photo-group .exp-photo img {
+  width: auto;
+  height: 100%;
+}
+
+.exp-photo {
+  margin-top: 1rem;
+  max-width: 260px;
+  border-radius: calc(var(--radius) - 4px);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.exp-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 .exp-list li::before {
   content: '›';
