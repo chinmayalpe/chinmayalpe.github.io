@@ -83,6 +83,57 @@ const sectionObserver = new IntersectionObserver((entries) => {
 sections.forEach(s => sectionObserver.observe(s));
 
 /* ============================================================
+   SECTION NAV — jump to previous/next section on this page
+   ============================================================ */
+const pageSections = Array.from(sections);
+
+if (pageSections.length > 1) {
+  const sectionNav = document.createElement('div');
+  sectionNav.className = 'section-nav';
+  sectionNav.innerHTML = `
+    <button class="section-nav-btn section-nav-prev" type="button" aria-label="Previous section">↑</button>
+    <button class="section-nav-btn section-nav-next" type="button" aria-label="Next section">↓</button>
+  `;
+  document.body.appendChild(sectionNav);
+
+  const prevBtn = sectionNav.querySelector('.section-nav-prev');
+  const nextBtn = sectionNav.querySelector('.section-nav-next');
+
+  const currentSectionIndex = () => {
+    const scrollPos = window.scrollY + window.innerHeight * 0.3;
+    let idx = 0;
+    pageSections.forEach((sec, i) => {
+      if (sec.offsetTop <= scrollPos) idx = i;
+    });
+    return idx;
+  };
+
+  const goToSection = (i) => {
+    const navHeight = nav ? nav.offsetHeight : 0;
+    const top = pageSections[i].offsetTop - navHeight - 12;
+    window.scrollTo({ top, behavior: 'smooth' });
+  };
+
+  const updateSectionNav = () => {
+    const idx = currentSectionIndex();
+    prevBtn.classList.toggle('is-hidden', idx === 0);
+    nextBtn.classList.toggle('is-hidden', idx === pageSections.length - 1);
+  };
+
+  prevBtn.addEventListener('click', () => {
+    const idx = currentSectionIndex();
+    if (idx > 0) goToSection(idx - 1);
+  });
+  nextBtn.addEventListener('click', () => {
+    const idx = currentSectionIndex();
+    if (idx < pageSections.length - 1) goToSection(idx + 1);
+  });
+
+  window.addEventListener('scroll', updateSectionNav, { passive: true });
+  updateSectionNav();
+}
+
+/* ============================================================
    LIGHTBOX
    ============================================================ */
 const lightbox = document.getElementById('lightbox');
