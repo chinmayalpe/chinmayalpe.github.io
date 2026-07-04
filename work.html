@@ -19,7 +19,6 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html#about">About</a></li>
         <li><a href="work.html" class="active">Work</a></li>
-        <li><a href="projects.html">Projects</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="https://chinmayantaranga.blogspot.com/" target="_blank" rel="noopener noreferrer">Blog ↗</a></li>
         <li><a href="https://www.instagram.com/chinmay.frames/" target="_blank" rel="noopener noreferrer">Insta ↗</a></li>
@@ -124,8 +123,13 @@
                 <li><strong>FPGA TDC for Quantum Radar:</strong> Dual-channel Time-to-Digital Converter with 20 ps precision — 15× better than legacy — on a Kintex-7 FPGA (NI PXI card).</li>
                 <li><strong>Stepper Motor Control:</strong> Novel high-configurability control topology with multi-parameter control inside a Virtex-5 FPGA.</li>
               </ul>
-              <div class="exp-photo">
-                <img src="assets/gallery/photo-4.jpg" alt="Chinmay at the Space Applications Centre (ISRO), Ahmedabad" loading="lazy" />
+              <div class="exp-photo-group">
+                <div class="exp-photo">
+                  <img src="assets/gallery/photo-4.jpg" alt="Chinmay at the Space Applications Centre (ISRO), Ahmedabad" loading="lazy" />
+                </div>
+                <div class="exp-photo">
+                  <img src="assets/gallery/cy3-isro-landing.jpg" alt="Celebrating the Chandrayaan-3 Moon landing at ISRO SAC" loading="lazy" />
+                </div>
               </div>
             </div>
           </div>
@@ -135,8 +139,78 @@
     </div>
   </section>
 
+  <!-- R&D PROJECTS -->
+  <section id="rd-projects" class="section section-alt">
+    <div class="container">
+      <div class="section-label">Career</div>
+      <h2 class="subsection-title">R&amp;D Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-badge">FPGA / Quantum</span>
+            <span class="project-year">2022 – 2023</span>
+          </div>
+          <h3 class="project-title">FPGA-Based TDC for Quantum Radar</h3>
+          <p class="project-desc">Dual-channel Time-to-Digital Converter on a Kintex-7 FPGA for time-of-flight measurement of entangled photons with 20 ps precision — 15× more precise than the legacy design — for ISRO's entangled photon quantum radar.</p>
+          <div class="project-assoc">
+            <span class="project-assoc-label">Associated with:</span>
+            <img src="assets/logos/isro.png" alt="ISRO" class="project-assoc-logo" />
+          </div>
+          <button class="project-more-btn" type="button">Read more →</button>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-badge">FPGA / Mixed-Signal</span>
+            <span class="project-year">2022 – 2023</span>
+          </div>
+          <h3 class="project-title">High-configurability Stepper Motor Control Topology for Space Applications</h3>
+          <p class="project-desc">Designed and implemented a novel Stepper Motor control topology with multi-parameter control inside a Virtex-5 FPGA. This included the development of both the mixed-signal hardware as well as the FPGA-based digital control architecture for the control of the stepper motor.</p>
+          <div class="exp-photo">
+            <img src="assets/gallery/photo-chinmay-isro-setup.png" alt="FPGA stepper motor control test setup at ISRO SAC" loading="lazy" />
+          </div>
+          <div class="project-assoc">
+            <span class="project-assoc-label">Associated with:</span>
+            <img src="assets/logos/isro.png" alt="ISRO" class="project-assoc-logo" />
+          </div>
+          <button class="project-more-btn" type="button">Read more →</button>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-badge">Quantum</span>
+            <span class="project-year">2023 – 2024</span>
+          </div>
+          <h3 class="project-title">RFSoC Quantum Readout System</h3>
+          <p class="project-desc">Hardware-accelerated readout scheme for measuring the purity of a microwave single-photon source and characterising a Josephson Parametric Converter via g² correlation measurement at IISc's Quantum Technologies Lab.</p>
+          <div class="project-assoc">
+            <span class="project-assoc-label">Associated with:</span>
+            <img src="assets/logos/iisc.png" alt="IISc Bangalore" class="project-assoc-logo" />
+          </div>
+          <button class="project-more-btn" type="button">Read more →</button>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-badge">FPGA / DSP</span>
+            <span class="project-year">2021 – 2022</span>
+          </div>
+          <h3 class="project-title">High-Speed CORDIC for Quantum Readout</h3>
+          <p class="project-desc">High-speed, low-resource CORDIC algorithm for a quantum computing readout system on RFSoC hardware. Matched IP-ready solutions while delivering significantly better clock rate and configurability.</p>
+          <div class="project-assoc">
+            <span class="project-assoc-label">Associated with:</span>
+            <img src="assets/logos/iisc.png" alt="IISc Bangalore" class="project-assoc-logo" />
+          </div>
+          <button class="project-more-btn" type="button">Read more →</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- EDUCATION -->
-  <section id="education" class="section section-alt">
+  <section id="education" class="section">
     <div class="container">
       <div class="section-label">Academics</div>
       <h2 class="subsection-title">Education</h2>
@@ -167,6 +241,51 @@
     </div>
   </section>
 
+  <!-- ACADEMIC PROJECTS -->
+  <section id="academic-projects" class="section section-alt">
+    <div class="container">
+      <div class="section-label">Academics</div>
+      <h2 class="subsection-title">Academic Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-badge">Robotics</span>
+            <span class="project-year">2021 – 2022</span>
+          </div>
+          <h3 class="project-title">Autonomous Greenhouse Agri-Robot</h3>
+          <p class="project-desc">Autonomous navigation algorithms for an agricultural robot in a greenhouse, with a robotic arm for identifying and picking ripe tomatoes using Computer Vision. Simulated end-to-end in ROS and Gazebo.</p>
+          <div class="exp-photo">
+            <img src="assets/gallery/eyantra-project.png" alt="Gazebo simulation of the greenhouse agri-robot picking a tomato" loading="lazy" />
+          </div>
+          <div class="project-assoc">
+            <span class="project-assoc-label">Associated with:</span>
+            <img src="assets/logos/eyantra.jpg" alt="e-Yantra" class="project-assoc-logo" />
+          </div>
+          <button class="project-more-btn" type="button">Read more →</button>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-badge">Embedded</span>
+            <span class="project-year">2021 – 2022</span>
+          </div>
+          <h3 class="project-title">Solar-Powered Reconnaissance Robot</h3>
+          <p class="project-desc">Solar-powered surveillance robot for extended monitoring of critical sites using Night Vision, stealthy operation, and a remote control station for real-time surveillance.</p>
+          <div class="exp-photo">
+            <img src="assets/gallery/solar-robot.png" alt="Solar-powered reconnaissance robot" loading="lazy" />
+          </div>
+          <div class="project-assoc">
+            <span class="project-assoc-label">Associated with:</span>
+            <img src="assets/logos/pict.jpg" alt="PICT Pune" class="project-assoc-logo" />
+          </div>
+          <button class="project-more-btn" type="button">Read more →</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- SKILLS -->
   <section id="skills" class="section">
     <div class="container">
@@ -185,9 +304,30 @@
         <span class="skill-tag">Embedded Systems</span>
         <span class="skill-tag">ROS</span>
         <span class="skill-tag">Quantum Tech</span>
+        <span class="skill-tag">Kintex-7 FPGA</span>
+        <span class="skill-tag">Virtex-5 FPGA</span>
+        <span class="skill-tag">RFSoC</span>
+        <span class="skill-tag">NI PXI</span>
+        <span class="skill-tag">Mixed-Signal Design</span>
+        <span class="skill-tag">Motor Control</span>
+        <span class="skill-tag">Signal Processing</span>
+        <span class="skill-tag">CORDIC</span>
+        <span class="skill-tag">Gazebo</span>
+        <span class="skill-tag">Computer Vision</span>
+        <span class="skill-tag">Microcontroller</span>
+        <span class="skill-tag">Night Vision</span>
+        <span class="skill-tag">Solar Power</span>
       </div>
     </div>
   </section>
+
+  <!-- PROJECT MODAL -->
+  <div id="projectModal" class="project-modal" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="project-modal-panel">
+      <button class="project-modal-close" aria-label="Close">&times;</button>
+      <div class="project-modal-body"></div>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer class="footer">
