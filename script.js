@@ -160,31 +160,3 @@ if (lightbox) {
   lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 }
-
-/* ============================================================
-   PROJECT MODAL
-   ============================================================ */
-const projectModal = document.getElementById('projectModal');
-if (projectModal) {
-  const modalBody  = projectModal.querySelector('.project-modal-body');
-  const modalClose = projectModal.querySelector('.project-modal-close');
-
-  document.querySelectorAll('.project-more-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const card = btn.closest('.project-card');
-      modalBody.innerHTML = card.innerHTML;
-      projectModal.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    });
-  });
-
-  function closeProjectModal() {
-    projectModal.classList.remove('open');
-    document.body.style.overflow = '';
-    modalBody.innerHTML = '';
-  }
-
-  modalClose.addEventListener('click', closeProjectModal);
-  projectModal.addEventListener('click', e => { if (e.target === projectModal) closeProjectModal(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeProjectModal(); });
-}
