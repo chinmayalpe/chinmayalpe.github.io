@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Gallery — Chinmay Alpe" />
-  <title>Gallery — Chinmay Alpe</title>
+  <meta name="description" content="Photography — Chinmay Alpe" />
+  <title>Photography — Chinmay Alpe</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -19,7 +19,7 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html#about">About</a></li>
         <li><a href="work.html">Work</a></li>
-        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="photography.html" class="active">Photography</a></li>
         <li><a href="https://chinmayantaranga.blogspot.com/" target="_blank" rel="noopener noreferrer">Antaranga (Blog) ↗</a></li>
         <li><a href="https://www.youtube.com/@chinmayalpe" target="_blank" rel="noopener noreferrer">Youtube ↗</a></li>
         <li><a href="https://www.instagram.com/chinmay.frames/" target="_blank" rel="noopener noreferrer">Photography (Insta) ↗</a></li>
@@ -41,38 +41,16 @@
     </div>
   </section>
 
-  <!-- GALLERY -->
-  <section id="gallery" class="section">
+  <!-- INSTAGRAM FEED -->
+  <section id="photography" class="section">
     <div class="container">
-      <div class="gallery-grid">
-
-        <div class="gallery-item reveal" data-src="assets/gallery/leopard.jpg">
-          <img src="assets/gallery/leopard.jpg" alt="Leopard, Tadoba 2024" loading="lazy" />
-          <div class="gallery-caption">Leopard, Tadoba 2024</div>
-        </div>
-
-        <div class="gallery-item reveal" data-src="assets/gallery/bird-canary-flycatcher.jpg">
-          <img src="assets/gallery/bird-canary-flycatcher.jpg" alt="Grey-headed Canary Flycatcher, Ooty" loading="lazy" />
-          <div class="gallery-caption">Grey-headed Canary Flycatcher, Ooty</div>
-        </div>
-
-        <div class="gallery-item reveal" data-src="assets/gallery/bird-parakeet.jpg">
-          <img src="assets/gallery/bird-parakeet.jpg" alt="Rose-ringed Parakeet" loading="lazy" />
-          <div class="gallery-caption">Rose-ringed Parakeet</div>
-        </div>
-
-        <div class="gallery-item reveal" data-src="assets/gallery/nisar-launch.jpg">
-          <img src="assets/gallery/nisar-launch.jpg" alt="NISAR Launch, 2025" loading="lazy" />
-          <div class="gallery-caption">NISAR Launch, 2025</div>
-        </div>
-
-      </div>
-
-      <!-- Lightbox overlay -->
-      <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
-        <button class="lightbox-close" aria-label="Close">&times;</button>
-        <img class="lightbox-img" src="" alt="" />
-      </div>
+      <!--
+        Powered by Behold.so, pulling live from @chinmay.frames.
+        Sign in at https://behold.so with the Instagram account, create a
+        feed, then replace YOUR_FEED_ID below with the feed ID it gives you.
+      -->
+      <script src="https://w.behold.so/widget.js" type="module"></script>
+      <behold-widget feed-id="YOUR_FEED_ID"></behold-widget>
     </div>
   </section>
 
