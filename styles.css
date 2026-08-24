@@ -136,6 +136,22 @@ img { max-width: 100%; display: block; }
   gap: 0.85rem;
 }
 
+.external-links-center {
+  justify-content: center;
+}
+
+.btn-insta {
+  background: #6B2050;
+  color: #fff;
+  border-color: #6B2050;
+}
+.btn-insta:hover {
+  background: #852865;
+  border-color: #852865;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(107, 32, 80, 0.32);
+}
+
 /* ============================================================
    NAV
    ============================================================ */
